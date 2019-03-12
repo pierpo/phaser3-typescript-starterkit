@@ -3,4 +3,8 @@ export class Main extends Phaser.Scene {
   constructor() {
     super(Main.SCENE_KEY);
   }
+
+  protected create() {
+    // initialize your scene here
+  }
 }

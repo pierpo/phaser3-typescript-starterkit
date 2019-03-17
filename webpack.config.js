@@ -1,8 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const AwesomeTypescriptLoader = require('awesome-typescript-loader');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+const { CheckerPlugin } = require('awesome-typescript-loader');
 
 module.exports = {
   entry: './src/index.ts',
@@ -17,16 +16,15 @@ module.exports = {
           useCache: true,
         },
       },
-      { enforce: 'pre', test: /\.js$/, loader: 'source-map-loader' },
     ],
   },
   plugins: [
+    new CheckerPlugin(),
     new HtmlWebpackPlugin({
       title: 'My Phaser Game',
       template: './src/index.html',
     }),
     new CopyWebpackPlugin([{ from: 'assets', to: 'assets' }]),
-    new FaviconsWebpackPlugin('./assets/bee.png'),
   ],
   output: {
     filename: 'bundle.js',

@@ -6,6 +6,8 @@
     "noUnusedLocals": true,
     "types": ["@types/jest"],
     "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
     "sourceMap": true
   },
   "skipLibCheck" : true,

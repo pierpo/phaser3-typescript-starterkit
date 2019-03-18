@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "outDir": "./built",
+    "target": "ES6",
     "noUnusedParameters": true,
     "noUnusedLocals": true,
     "types": ["@types/jest"],

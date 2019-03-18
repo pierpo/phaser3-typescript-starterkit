@@ -3,7 +3,7 @@
     "build": "webpack -p --config webpack.prod.js",
     "start": "webpack-dev-server",
     "pretest": "tsc --project .",
-    "test": "jest",
+    "test": "yarn lint && jest",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "deploy": "yarn build && gh-pages -d dist"
   },

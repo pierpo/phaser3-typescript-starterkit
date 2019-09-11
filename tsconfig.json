@@ -16,6 +16,5 @@
       "require": true
     }
   },
-  "files": ["typings/phaser.d.ts"],
   "include": ["./src/**/*"]
 }

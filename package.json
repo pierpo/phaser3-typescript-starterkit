@@ -2,7 +2,7 @@
   "scripts": {
     "build": "webpack -p --config webpack.prod.js",
     "start": "webpack-dev-server",
-    "pretest": "tsc --project .",
+    "pretest": "tsc --noEmit --project .",
     "test": "yarn lint && jest",
     "lint": "eslint src --ext .ts --cache",
     "deploy": "yarn build && gh-pages -d dist"

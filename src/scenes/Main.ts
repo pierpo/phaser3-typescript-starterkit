@@ -4,7 +4,8 @@ export class Main extends Phaser.Scene {
     super(Main.SCENE_KEY);
   }
 
-  protected create() {
+  protected create(): void {
     // initialize your scene here
+    this.add.circle(10, 10, 5, 0xff00ff);
   }
 }

@@ -1,11 +1,11 @@
 import { Main } from './Main';
 
 export class Preloader extends Phaser.Scene {
-  protected preload() {
+  protected preload(): void {
     this.load.image('bee', 'assets/bee.png');
   }
 
-  protected create() {
+  protected create(): void {
     this.scene.launch(Main.SCENE_KEY);
   }
 }

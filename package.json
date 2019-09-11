@@ -22,7 +22,7 @@
     "babel-jest": "24.9.0",
     "copy-webpack-plugin": "5.0.4",
     "eslint": "6.3.0",
-    "favicons-webpack-plugin": "0.0.9",
+    "favicons-webpack-plugin": "1.0.2",
     "husky": "3.0.5",
     "jest": "24.9.0",
     "prettier": "1.18.2",

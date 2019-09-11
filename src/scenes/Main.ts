@@ -6,6 +6,8 @@ export class Main extends Phaser.Scene {
 
   protected create(): void {
     // initialize your scene here
-    this.add.circle(10, 10, 5, 0xff00ff);
+    this.add.circle(200, 200, 50, 0xff0faf);
+    this.add.circle(100, 150, 20, 0xffaaaa);
+    this.add.circle(300, 100, 25, 0xaf0bb0);
   }
 }

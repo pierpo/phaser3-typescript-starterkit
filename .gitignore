@@ -4,3 +4,4 @@ node_modules
 built
 .awcache
 yarn-error.log
+.eslintcache
